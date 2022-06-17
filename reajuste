@@ -1,0 +1,33 @@
+#loop pra caso opcao nao seja valida, voltar para opcoes
+loop = True
+#declarao de opcao pra escolher qual reajuste
+opcao = int(input("Digite a opcao que voce quer o reajuste(10/15/20/30)"))
+
+#loop pra tratamento de erro 
+while(loop):
+    #if para caso opcao nao seja disponivel
+    if(opcao != 10 and opcao != 15 and opcao != 20 and opcao != 30):
+        print("opcao nao disponivel")
+        opcao = int(input("Digite a opcao que voce quer o reajuste(10/15/20/30)"))
+    #tratamento de ifs para o reajuste    
+    if(opcao == 10):      
+      salario = float(input("Digite seu salario: "))
+      salario = salario + salario*0.10
+      print(salario)
+      #pra sair do loop
+      loop = False
+    elif(opcao == 15):
+     salario = float(input("Digite seu salario: "))
+     salario = salario + salario*0.15
+     print(salario)
+     loop = False
+    elif(opcao == 20):
+     salario = float(input("Digite seu salario: "))
+     salario = salario + salario*0.20
+     print(salario)
+     loop = False
+    elif(opcao == 30):
+      salario = float(input("Digite seu salario: ")) 
+      salario = salario + salario*0.30
+      print(salario)
+      loop = False
