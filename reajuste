@@ -14,7 +14,7 @@ while(loop):
       salario = float(input("Digite seu salario: "))
       salario = salario + salario*0.10
       print(salario)
-      #pra sair do loop
+      #pra sair do laco
       loop = False
     elif(opcao == 15):
      salario = float(input("Digite seu salario: "))
